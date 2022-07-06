@@ -1,0 +1,16 @@
+---
+- name: Configuracion_Netflow
+  hosts: Netflow
+  gather_facts: no
+  connection: ansible.netcommon.network_cli  
+  
+  
+  tasks:
+    - name: Configurar_Puerto   
+      cisco.iosxr.iosxr_config:
+        src: "{{ playbook_dir }}/InterfacesFlow.txt"
+
+      register: Puerto
+
+    - name: ImprimirConfig
+      debug: var=Puerto
