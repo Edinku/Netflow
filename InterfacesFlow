@@ -1,7 +1,5 @@
-!
 interface BVI40027
 flow ipv4 monitor CDN sampler SM1 ingress 
 flow ipv4 monitor CDN-OUT sampler SM1 egress 
 flow ipv6 monitor CDN6 sampler SM1 ingress 
-flow ipv6 monitor CDN6-OUT sampler SM1 egress 
-!
+flow ipv6 monitor CDN6-OUT sampler SM1 egress
