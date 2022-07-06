@@ -1,6 +1,6 @@
 ---
 - name: Configuracion_Netflow
-  hosts: Netflow
+  hosts: Seleccionados_eruiz
   gather_facts: no
   connection: ansible.netcommon.network_cli  
   
